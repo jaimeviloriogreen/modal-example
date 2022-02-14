@@ -1,7 +1,8 @@
 import { modal } from "./dom.js";
 
 export class Rendex{
-    showModal(){
+    showModal(e){
+        e.preventDefault();
         modal.classList.add("modal--show");
     }
     closeModal(e){
